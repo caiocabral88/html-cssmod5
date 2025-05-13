@@ -20,18 +20,21 @@
             text-align: center;
             border: 1px solid black;
             /*Os 3 abaixo trabalham juntos*/
-            
+            flex-basis: 200px;
         }
 
         div#ca {
-            flex: 1 0 200px;
+            flex-shrink: 1;
+            flex-grow: 0;
         }
         div#cb {
-            flex: 1 2 200px;
-            
+            flex-shrink: 1;
+            flex-grow: 2;
         }
         div#cc {
-            flex: 4 1 auto;
+            flex-basis: 150px;
+            flex-shrink: 1;
+            flex-grow: 4;
         }
     </style>
 </head>
@@ -46,5 +49,3 @@
     
 </body>
 </html>
-
-
