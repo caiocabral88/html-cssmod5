@@ -9,10 +9,9 @@
             background-color: lightcyan;
 
 
-
             display: flex;
             flex-flow: row nowrap;
-            
+
         }
 
         div.item {
@@ -20,21 +19,31 @@
             background-color: aqua;
             text-align: center;
             border: 1px solid black;
-
+            /*Os 3 abaixo trabalham juntos*/
             flex-basis: 200px;
+        }
+
+        div#ca {
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+        div#cb {
+            flex-shrink: 1;
+            flex-grow: 2;
+        }
+        div#cc {
+            flex-basis: 150px;
+            flex-shrink: 1;
+            flex-grow: 4;
         }
     </style>
 </head>
 <body>
 
     <div class="conteiner">
-        <div class="item">Aasdadada</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">Dasda dasd asda a</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
+        <div class="item" id="ca">A</div>
+        <div class="item" id="cb">B</div>
+        <div class="item" id="cc">C</div>
 
     </div>
     
