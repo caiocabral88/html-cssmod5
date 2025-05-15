@@ -35,9 +35,6 @@ nav {
     display: flex;
 }
 
-nav:hover {
-    
-}
 nav > a {
     background-color: darkgray;
     padding: 10px;
